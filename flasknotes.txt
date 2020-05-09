@@ -1,0 +1,16 @@
+Had to install flask:
+pip install flask
+
+Had to add to path:
+path=%path%;C:\Users\proth\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\Scripts
+
+Had to set variable to tell flask what to run:
+set flask_app=application.py
+
+Turn on debug mode so it's not necessary to constantly restart flask
+set flask_env=development
+
+command to start flask is flask run
+
+All was served up to:
+http://127.0.0.1:5000/

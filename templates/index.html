@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>My Website</title>
+  </head>
+  <body>
+    <h1>{{headline}}</h1>
+    {% if new_year %}
+      <h1>Yes! Happy New Year!</h1>
+    {% else %}
+      <h1>Names</h1>
+      <ul>
+      {% for name in names %}
+        <li>{{ name }}</li>
+      {% endfor %}
+      </ul>
+    {% endif %}
+    <a href="{{ url_for('more') }}">See more</a>
+  </body>
+</html>
